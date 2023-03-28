@@ -1,0 +1,59 @@
+*{  
+    padding: 0;
+    margin: 0;
+    font-family: Comic Sans MS;
+}
+
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(#23a6d5, #23d5ab);
+        animation: gradient 5s ease infinite;
+        background-size: 400% 400%;
+        height: 97.5vh;
+}
+
+.box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;     
+        height: 100px;
+        width: 400px;
+        background-color: white;
+        -webkit-box-shadow: 0px 11px 15px -9px rgba(102,102,102,1);
+        -moz-box-shadow: 0px 11px 15px -9px rgba(102,102,102,1);
+        box-shadow: 0px 11px 15px -9px rgba(102,102,102,1);
+}
+
+.line {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    transition: all 0.5s;
+}
+
+p {
+    text-align: center;
+
+}
+
+.line:hover {
+    -webkit-box-shadow: -1px 10px 5px -6px rgba(219,219,219,1);
+    -moz-box-shadow: -1px 10px 5px -6px rgba(219,219,219,1);
+    box-shadow: -1px 10px 5px -6px rgba(219,219,219,1);
+    transition: all 0.5s;
+}
+
+@keyframes gradient {
+        0% {
+            background-position: 50% 0%;
+        }
+        50% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }
